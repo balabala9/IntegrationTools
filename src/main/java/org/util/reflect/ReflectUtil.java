@@ -61,7 +61,7 @@ public class ReflectUtil<T> {
 
 
     //操作类的某个属性
-    public Object modifiyProperty(Class<?> className, String propertyName, T value ) throws NoSuchFieldException, IllegalAccessException, InstantiationException {
+    public Object modifiyProperty(Class<?> className, String propertyName, T value) throws NoSuchFieldException, IllegalAccessException, InstantiationException {
 
         Object obj = className.newInstance();
 
@@ -69,7 +69,7 @@ public class ReflectUtil<T> {
 
         field.setAccessible(true);
 
-        field.set(obj,value);
+        field.set(obj, value);
 
         return field.get(obj);
 
@@ -165,7 +165,7 @@ public class ReflectUtil<T> {
     }
 
 
-    public static Object invoke(Class<?> className, String funName, String methodJson, String[] params) throws NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException {
+    public static Object invoke(Class<?> className, String funName, String methodJson, Object... params) throws NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException {
 
         String res = getSingMethodInfo(methodJson, funName);
 

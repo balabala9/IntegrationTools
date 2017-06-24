@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.lyq.tools</groupId>
-    <artifactId>intergration-tools</artifactId>
+    <groupId>com.mavenDemo</groupId>
+    <artifactId>mavenDemo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
@@ -32,25 +32,25 @@
         </dependency>
         <!--netty-->
         <!--<dependency>-->
-        <!--<groupId>io.netty</groupId>-->
-        <!--<artifactId>netty-transport-native-epoll</artifactId>-->
-        <!--<version>5.0.0.Alpha2</version>-->
+            <!--<groupId>io.netty</groupId>-->
+            <!--<artifactId>netty-transport-native-epoll</artifactId>-->
+            <!--<version>5.0.0.Alpha2</version>-->
         <!--</dependency>-->
         <!--<dependency>-->
-        <!--<groupId>io.netty</groupId>-->
-        <!--<artifactId>netty</artifactId> &lt;!&ndash; Use 'netty-all' for 4.0 or above &ndash;&gt;-->
-        <!--<version>4.1.8</version>-->
-        <!--<scope>compile</scope>-->
+            <!--<groupId>io.netty</groupId>-->
+            <!--<artifactId>netty</artifactId> &lt;!&ndash; Use 'netty-all' for 4.0 or above &ndash;&gt;-->
+            <!--<version>4.1.8</version>-->
+            <!--<scope>compile</scope>-->
         <!--</dependency>-->
         <!--<dependency>-->
-        <!--<groupId>io.netty</groupId>-->
-        <!--<artifactId>netty-all</artifactId>-->
-        <!--<version>5.0.0.Alpha2</version>-->
+            <!--<groupId>io.netty</groupId>-->
+            <!--<artifactId>netty-all</artifactId>-->
+            <!--<version>5.0.0.Alpha2</version>-->
         <!--</dependency>-->
         <!--<dependency>-->
-        <!--<groupId>io.netty</groupId>-->
-        <!--<artifactId>netty</artifactId>-->
-        <!--<version>3.7.0.Final</version>-->
+            <!--<groupId>io.netty</groupId>-->
+            <!--<artifactId>netty</artifactId>-->
+            <!--<version>3.7.0.Final</version>-->
         <!--</dependency>-->
         <dependency>
             <groupId>io.netty</groupId>
@@ -81,9 +81,9 @@
 
         <!--log4j-->
         <!--<dependency>-->
-        <!--<groupId>log4j</groupId>-->
-        <!--<artifactId>log4j</artifactId>-->
-        <!--<version>1.2.9</version>-->
+            <!--<groupId>log4j</groupId>-->
+            <!--<artifactId>log4j</artifactId>-->
+            <!--<version>1.2.9</version>-->
         <!--</dependency>-->
         <dependency>
             <groupId>log4j</groupId>
@@ -456,6 +456,6 @@
             <artifactId>activemq-core</artifactId>
             <version>5.7.0</version>
         </dependency>
-    </dependencies>
 
+    </dependencies>
 </project>

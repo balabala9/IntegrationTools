@@ -13,7 +13,6 @@ import org.apache.http.util.EntityUtils;
 import org.eclipse.jetty.util.ajax.JSON;
 
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.util.Map;
 
 
@@ -109,7 +108,7 @@ public class httpUntil {
             } else if (o instanceof Map) {
                 param = JSON.toString(o);
             }
-            
+
             StringEntity entity = null;
 
             //UrlEncodedFormEntity实例像上面一样使用URL编码方式来编码参数并生成下面的内容：param1=value1&param2=value2

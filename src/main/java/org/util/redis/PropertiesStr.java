@@ -23,7 +23,7 @@ public class PropertiesStr {
     public static HashMap<String, Integer> singleHostMmap = new HashMap<String, Integer>();
 
 
-    PropertiesStr(String name) {
+    public PropertiesStr(String name) {
 
         InputStream inputStream = ClassLoader.getSystemResourceAsStream(name);
 

@@ -22,7 +22,7 @@ public class CHbaseUtil {
 
     private HTablePool tablePool;
 
-    CHbaseUtil() {
+    public CHbaseUtil() {
         configuration = new HBaseConfiguration();//默认会从classpath查找
         try {
             admin = new HBaseAdmin(configuration);

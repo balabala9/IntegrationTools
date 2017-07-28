@@ -20,13 +20,14 @@ import java.util.List;
  */
 public class HadoopUtil {
     private Configuration conf;
+    private String hostname = "hdfs://master:9000";
 
     static {
         URL.setURLStreamHandlerFactory(new FsUrlStreamHandlerFactory());
     }
 
 
-    HadoopUtil() {
+    public HadoopUtil() {
         conf = new Configuration();
 
         conf.set("fs.default.name", "hdfs://master:9000");//如果不写只能本地操作
@@ -243,5 +244,26 @@ public class HadoopUtil {
             e.printStackTrace();
         }
         return JSON.toJSONString(list);
+    }
+
+    public void copyFile(String localpath, String remotepath) {
+
+        String remoteurl= hostname + remotepath;
+        FileSystem fs=null;
+
+        try {
+            fs=FileSystem.get(URI.create(remoteurl),conf);
+            fs.copyFromLocalFile(new Path(localpath), new Path(remoteurl));
+
+            System.out.println("copy from: " + localpath + " to " + remotepath);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }finally{
+            try {
+                fs.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

@@ -19,7 +19,7 @@ import java.util.Map;
 /**
  * Created by li on 17-6-24.
  */
-public class httpUntil {
+public class httpUtil {
 
 
     public static String httpPost(String url, Object o) {
